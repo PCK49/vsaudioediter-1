@@ -18,11 +18,12 @@
 .container.controls {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 200px;
   width: 100%;
+  gap: 20px;
 }
 .background {
   background-color:#f5f5f5;
