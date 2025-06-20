@@ -23,8 +23,11 @@ ul {
   font-family: 'Comfortaa', sans-serif;
   color: black;
   font-size: 20px;
-  text-align: center;
-  margin: 5px;
+  margin: 10px auto;
+  padding-left: 40px;
+  list-style-type: disc;
+  max-width: 600px;
+  text-align: left;
 }
 .container.front {
   position: relative;
