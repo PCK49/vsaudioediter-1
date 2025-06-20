@@ -6,19 +6,33 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
   </head>
-    <body>
-      <div class="container front">
-        <div class="text">VS Audio Editor</div>
-      </div>
-      <input type="file" id="audioUpload" accept="audio/*" style="display: none;">
-      <div class="container controls">
-        <button class="button pitch" onclick="handleAction('pitch')">Change Pitch</button>
-        <button class="button volume" onclick="handleAction('volume')">Change Volume</button>
+  <body>
+    <div class="container front">
+      <div class="text">VS Audio Editor</div>
+    </div>
+
+    <input type="file" id="audioUpload" accept="audio/*" style="display: none;">
+
+    <div class="container controls">
+      <button class="button pitch" onclick="handleAction('pitch')">Change Pitch</button>
+      <button class="button volume" onclick="handleAction('volume')">Change Volume</button>
       <button class="button reverse" onclick="handleAction('reverse')">Reverse</button>
-      </div>
-      <script src="index.js"></script>
-      <hr>
-      <h1>How do you use VS Audio Editor?</h1>
-      <p>First, upload the audio.</p>
-    </body>
+    </div>
+
+    <script src="index.js"></script>
+
+    <hr>
+
+    <h1>How do you use VS Audio Editor?</h1>
+    <p>First, select the effect you want to apply by clicking one of the buttons:</p>
+    <ul>
+      <li><strong>Blue (Pitch):</strong> Change the pitch of the audio</li>
+      <li><strong>Red (Volume):</strong> Adjust the volume</li>
+      <li><strong>Yellow (Reverse):</strong> Reverse the audio playback</li>
+    </ul>
+    <p>
+      After selecting an effect, upload the MP3 file you'd like to edit. Once the file is uploaded, click the same button again to apply the effect.
+    </p>
+  </body>
 </html>
+
