@@ -9,8 +9,6 @@ document.getElementById('audioUpload').addEventListener('change', function(event
     audio.controls = true;
     audio.autoplay = true;
     audioLoaded = true;
-
-    // Add the audio player once
     if (!document.body.contains(audio)) {
       document.body.appendChild(audio);
     }
@@ -24,10 +22,10 @@ function handleAction(action) {
   }
 
   if (action === 'pitch') {
-    alert('Pitch adjustment (coming soon)');
+    let pitchSpeed = prompt("What pitch speed do you want?");
   } else if (action === 'volume') {
-    alert('Volume adjustment (coming soon)');
-  } else if (action === 'reverse') {
+    let volume = prompt("How loud do you want the audio to be?");
     alert('Reverse effect (coming soon)');
   }
 }
+
