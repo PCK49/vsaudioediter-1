@@ -10,15 +10,15 @@
       <div class="container front">
         <div class="text">VS Audio Editor</div>
       </div>
-      <input class="file" id="audioUpload" type="file" accept="audio/*">
+      <input type="file" id="audioUpload" accept="audio/*" style="display: none;">
       <div class="container controls">
-        <button class="button pitch" onclick="pitch()">Change Pitch</button>
-        <button class="button volume" onclick="volume()">Change volume</button>
-        <button class="button reverse" onclick="reverse()">Reverse</button>
+        <button class="button pitch" onclick="handleAction('pitch')">Change Pitch</button>
+        <button class="button volume" onclick="handleAction('volume')">Change Volume</button>
+      <button class="button reverse" onclick="handleAction('reverse')">Reverse</button>
       </div>
       <script src="index.js"></script>
-      <div class="container controls">
-        <div class="text">How To Use</div>
-        <div class="text">First, upload your file</div>
+      <hr>
+      <h1>How do you use VS Audio Editor?</h1>
+      <p>First, upload the audio.</p>
     </body>
 </html>
