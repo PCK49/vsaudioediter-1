@@ -24,10 +24,11 @@ function handleAction(action) {
   }
 
   if (action === 'pitch') {
-    let pitchSpeed = prompt("What pitch speed do you want?");
-    alert(`Pitch adjustment to speed: ${pitchSpeed} (feature coming soon)`);
+    let pitchSpeed = prompt("What pitch speed do you want? ");
+    alert(`Pitch adjustment to speed: ${pitchSpeed}`);
+    audio.playbackRate=pitchSpeed;
   } else if (action === 'volume') {
-    let volume = prompt("How loud do you want the audio to be? (0.0 to 1.0)");
+    let volume = prompt("How loud do you want the audio to be? ");
     if (volume !== null && !isNaN(volume)) {
       audio.volume = Math.min(Math.max(parseFloat(volume), 0), 1);
     }
